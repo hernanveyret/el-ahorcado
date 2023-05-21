@@ -2,6 +2,9 @@
     font-family: tiza;
     src: url(Font/Inkfree.ttf);
 }
+html {
+    font-size: 100%;
+}
 body {
     margin: 0;
     padding: 0;
@@ -154,7 +157,7 @@ header .menuIcono {
 
 h1 {
     margin: 0;
-    font-size: 5em;
+    font-size: 5rem;
     color:blueviolet;
     text-shadow: 2px 2px 10px black;
 }
@@ -320,11 +323,14 @@ footer {
     justify-content: center;
     align-items: center;
 }
+footer p {
+    font-size: 1rem;
+}
 
 @media ( max-width: 580px) {
    
     h1 {
-        font-size: 2em;
+        font-size: 1rem;
     }
     .menu {
         display: none;
@@ -346,11 +352,14 @@ footer {
         height: 40%;
     }
     .cabeza,.cuerpo,.brazoDerecho,.brazoIzquierdo,.piernaIzquierda,.piernaDerecha,.pieDerecho,.pieIzquierdo,.manoDerecha,.manoIzquierda,.pelo,.ojoDerecho,.ojoIzquierdo,.boca {
-        left: 106px;
+        left: 2.5rem;
         height: 20%;
     }
     .form, .cuadroFinJuego,.cuadroNuevoRecord {
         width: 70%;
+    }
+    footer p {
+        font-size: .8rem;
     }
 }
 
