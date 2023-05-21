@@ -1,0 +1,374 @@
+@font-face {
+    font-family: tiza;
+    src: url(Font/Inkfree.ttf);
+}
+html {
+    font-size: 100%;
+}
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url(img/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;  
+    font-family: tiza;
+    font-weight: 900;
+}
+.contenedorFormulario {
+    background-color: rgba(91, 17, 160, 0.747);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 30;
+}
+.form {
+    background-color: aqua;
+    width: 20%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 70px 20px 70px 20px;
+    box-shadow: 2px 5px 5px  rgb(99, 98, 98);
+    padding: 10px 0;
+}
+.form p {
+    font-weight: 900;
+}
+#nombreJugador {
+    padding: 10px;
+    border: none;
+    margin: 0 0 10px 0;
+    border-radius: 30px;
+    box-shadow: 2px 5px 5px  rgb(99, 98, 98);
+    text-align: center;
+}
+.btn-cargarNombre,.btn-fin {
+    padding: 10px;
+    border-radius:30px;
+    cursor: pointer;
+    transition: .7s;
+    border: none;
+    box-shadow: 2px 5px 5px  rgb(99, 98, 98);
+    font-family: tiza;
+    font-weight: 900;
+    background-color: pink;
+}
+.btn-fin:hover {
+    background-color: brown;
+}
+.btn-cargarNombre:hover {
+    background-color:brown;
+}
+.btn-cargarNombre:active {
+    box-shadow: none;
+}
+.contenedorFinJuego {
+background-color: rgba(91, 17, 160, 0.747);
+width: 100%;
+height: 100vh;
+display: none;
+justify-content: center;
+align-items: center;
+position: fixed;
+z-index: 30;
+}
+.cuadroFinJuego {
+    background-color: aqua;
+    width: 20%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 70px 20px 70px 20px;
+    box-shadow: 2px 5px 5px  rgb(99, 98, 98);
+    padding: 10px 0;
+}
+.contenedorNuevoRecor {
+    background-color: rgba(91, 17, 160, 0.747);
+    width: 100%;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 30;
+}
+.contenedorJugadaGanada {
+    background-color: rgba(91, 17, 160, 0.747);
+    width: 100%;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 30;
+} 
+.contenedorJuegoTerminado {
+    background-color: rgba(91, 17, 160, 0.747);
+    width: 100%;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 30;
+}
+
+.cuadroNuevoRecord {
+    background-color: aqua;
+    width: 20%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 70px 20px 70px 20px;
+    box-shadow: 2px 5px 5px  rgb(99, 98, 98);
+    padding: 10px 0;
+}
+.border {
+    border: 4px solid white;
+    border-radius: 20px;
+    padding: 10px;
+}
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: pink;
+    width: 100%;
+}
+header .menuIcono {
+    width: 2em;
+    display: none;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.imgCopa {
+    width: 2em;
+}
+
+h1 {
+    margin: 0;
+    font-size: 5rem;
+    color:blueviolet;
+    text-shadow: 2px 2px 10px black;
+}
+.menu {
+    display: flex;
+}
+.menu li {
+    list-style: none;
+    margin-right: 10px;
+}
+.btn-menu {
+    background-color: pink;
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 10px;
+    font-family: tiza;
+    font-weight: 700;
+    transition: .7s;
+    cursor: pointer;
+}
+.btn-menu:hover {
+    color:brown;
+    border-color:brown;
+}
+.contenedorMenu {
+    width: 35px;
+    height:35px;
+    position: relative;
+}
+
+.menuOculto {
+    display: none;
+    justify-content:center;
+    align-items: center;
+    padding: 0;
+    background-color: pink;
+    box-shadow: 2px 5px 5px  rgb(99, 98, 98);
+    width: 135px;
+    position:absolute;
+    bottom: -145px;
+    left: -15px;
+    z-index: 11;
+}
+.contenedorMenu:hover .menuOculto {
+    display: block;
+}
+.menuOculto li {
+    margin: 10px;
+    padding: 5px;
+    list-style: none;
+}
+
+.record {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 4em;    
+}
+.record div {
+    margin-right: 20px;
+}
+.nombreYpuntos {
+    display: flex;   
+    align-items: center;
+    flex-direction: column;
+}
+
+.record p {
+    color:white;
+    line-height: 3px;
+}
+main {  
+    width: 100%;
+    height: 71vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nombreYvidas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 2em;
+    overflow: hidden;
+}
+.vidaUno, .vidaDos, .vidaTres,.vidaCuatro,.vidaCinco, .vidaSeis {
+    width: 30px;
+}
+.vidaUno, .vidaDos, .vidaTres, #mostrarNombre, #mostrarPuntos,.vidaCuatro,.vidaCinco, .vidaSeis {
+    margin: 0 5px;
+}
+figure {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.soga {
+    height: 60%;
+    position: relative;
+}
+.cabeza,.cuerpo,.brazoDerecho,.brazoIzquierdo,.piernaIzquierda,.piernaDerecha,.pieDerecho,.pieIzquierdo,.manoDerecha,.manoIzquierda,.pelo,.ojoDerecho,.ojoIzquierdo,.boca {
+   position:absolute;
+   height:28%;
+   left: 225px;
+   display: none;
+}
+.ojoDerecho,.ojoIzquierdo,.boca {
+   z-index:20;
+}
+aside {
+    width: 100%;
+    height: 100%;   
+}
+.arriba, .abajo { 
+    width: 100%;
+    height: 50%;
+    
+}
+.arriba {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+.abajo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.letras {
+    border-bottom: 5px solid black;
+    width: 45px;
+    height: 65px;
+    margin-right: 0.3em;
+}
+.colorLetra {
+    font-size: 60px;
+    margin: 0;
+    display: none;
+}
+.abecedario {
+    margin: 2px;
+    padding: 0 10px;
+}
+.btn-letra {
+    font-size: 50px;
+    border: none;
+    background:none;
+    cursor: pointer;
+    font-family: tiza;
+    border-radius: 10px;
+}
+footer {
+    width: 100%;
+    height: 60px;
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer p {
+    font-size: 1rem;
+}
+
+@media only screen and  ( max-width: 600px) {
+   
+    h1 {
+        font-size: 1rem;
+    }
+    .menu {
+        display: none;
+    }
+    header .menuIcono {
+        display: flex;
+    }
+    .btn-letra {
+        font-size:1em;
+    }
+    .colorLetra {
+        font-size: 1.5em;
+    }
+    .letras {
+        width: 15px;
+        height: 30px;
+    }
+    .soga {
+        height: 40%;
+    }
+    .cabeza,.cuerpo,.brazoDerecho,.brazoIzquierdo,.piernaIzquierda,.piernaDerecha,.pieDerecho,.pieIzquierdo,.manoDerecha,.manoIzquierda,.pelo,.ojoDerecho,.ojoIzquierdo,.boca {
+        left: 6.3rem;
+        top: 17.5rem;
+        height: 20%;
+    }
+    .form, .cuadroFinJuego,.cuadroNuevoRecord {
+        width: 70%;
+    }
+    footer p {
+        font-size: .8rem;
+    }
+    
+    .vidas {
+        width: 1em;
+    }
+   
+}
+
